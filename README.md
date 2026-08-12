@@ -1,58 +1,89 @@
-# 📊 Análise Exploratória do Catálogo da Netflix
+# Análise de Dados do Catálogo Netflix
 
-Projeto de análise exploratória de dados desenvolvido em Python com o objetivo de investigar as principais características do catálogo da Netflix.
+Projeto de análise de dados desenvolvido com Python e Power BI, utilizando dados do catálogo da Netflix.
 
-A análise envolve etapas de exploração, limpeza e transformação dos dados, além da criação de visualizações para identificar padrões relacionados aos tipos de conteúdo, gêneros, países, duração, classificações indicativas e evolução do catálogo ao longo dos anos.
+O objetivo do projeto foi praticar o processo de análise de dados, passando pela exploração e tratamento dos dados em Python até a criação de um dashboard interativo no Power BI.
 
-## 🎯 Objetivo
-
-O objetivo deste projeto é aplicar conceitos fundamentais de análise de dados utilizando Python e Pandas, transformando dados brutos em informações que permitam compreender melhor a composição e a evolução do catálogo analisado.
-
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Python
 - Pandas
-- Matplotlib
-- Jupyter
-- Visual Studio Code
+- Jupyter Notebook
+- Power BI
+- Git e GitHub
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
-```text
-analise-netflix/
-├── data/
-│   └── netflix_titles.csv
-├── notebooks/
-│   └── analise_netflix.ipynb
-└── README.md
+- `data/` → arquivos utilizados na análise
+- `notebooks/` → análise e tratamento dos dados em Python
+- `dashboard/` → dashboard desenvolvido no Power BI
+- `images/` → imagens do dashboard
+- `requirements.txt` → bibliotecas Python utilizadas no projeto
 
-## 🔎 Etapas da análise
+## Tratamento dos dados
 
-O projeto foi desenvolvido seguindo as seguintes etapas:
+Antes da criação do dashboard, os dados foram explorados e tratados utilizando Python e Pandas.
 
-1. Carregamento e exploração inicial dos dados;
-2. Identificação de valores ausentes e possíveis inconsistências;
-3. Tratamento e transformação das variáveis;
-4. Preparação dos dados de gêneros e países;
-5. Análise exploratória dos dados;
-6. Criação de visualizações;
-7. Interpretação dos resultados e identificação dos principais insights.
+Durante essa etapa foram realizadas:
 
-## 📈 Principais insights
+- análise inicial da estrutura do dataset;
+- identificação e tratamento de valores ausentes;
+- conversão e ajuste de tipos de dados;
+- tratamento da coluna de duração dos títulos;
+- separação de informações de gêneros e países para facilitar as análises;
+- criação de dados preparados para utilização no Power BI.
 
-A análise permitiu identificar alguns padrões importantes no catálogo:
+## Análise dos dados
 
-- Aproximadamente **69,6% dos títulos são filmes**, enquanto 30,4% são séries.
-- O número de títulos adicionados ao catálogo apresentou forte crescimento principalmente a partir de 2016.
-- **International Movies** é a categoria mais frequente, seguida por Dramas e Comedies.
-- Os **Estados Unidos** apresentam a maior presença entre os países associados às produções.
-- Os filmes possuem duração média de aproximadamente **99,6 minutos**.
-- Cerca de **67% das séries possuem apenas uma temporada**.
-- **TV-MA** é a classificação indicativa mais frequente, representando aproximadamente 36,4% do catálogo.
-- Os filmes atingiram o maior número de adições em 2019, enquanto as séries atingiram seu pico em 2020.
+Após o tratamento, os dados foram analisados para compreender melhor a composição e a evolução do catálogo da Netflix.
 
-## ⚠️ Limitações dos dados
+Entre as análises realizadas estão:
 
-Os dados de 2021 estão disponíveis somente até 25 de setembro, portanto os resultados desse ano não devem ser comparados diretamente com anos completos.
+- quantidade total de títulos disponíveis;
+- comparação entre filmes e séries;
+- evolução da quantidade de títulos adicionados ao catálogo ao longo dos anos;
+- gêneros mais presentes no catálogo;
+- países com maior quantidade de títulos;
+- distribuição dos títulos por classificação indicativa;
+- análise da duração média dos filmes.
 
-Além disso, algumas produções estão associadas a múltiplos gêneros e países. Nessas análises, cada categoria foi considerada individualmente, portanto as contagens representam ocorrências e não necessariamente títulos exclusivos.
+## Dashboard no Power BI
+
+Os dados tratados foram utilizados para desenvolver um dashboard interativo no Power BI.
+
+O dashboard permite explorar as informações por meio de filtros de tipo de conteúdo, país e ano, possibilitando analisar diferentes características do catálogo de forma dinâmica.
+
+### Principais indicadores
+
+- **8.808** títulos
+- **6.131** filmes
+- **2.676** séries
+- **99,6 min** de duração média dos filmes
+
+## Visualização do Dashboard
+
+![Dashboard Netflix](images/dashboard_netflix.png)
+
+## Principais insights
+
+A análise dos dados permitiu identificar alguns padrões no catálogo da Netflix:
+
+- Filmes representam a maior parte do catálogo, correspondendo a aproximadamente 70% dos títulos.
+- Os Estados Unidos aparecem como o país com maior quantidade de títulos no catálogo.
+- Gêneros relacionados a filmes internacionais e dramas estão entre os mais presentes.
+- Houve um forte crescimento na quantidade de títulos adicionados ao catálogo principalmente a partir de 2016.
+- A duração média dos filmes presentes no catálogo é de aproximadamente 100 minutos.
+
+## Aprendizados
+
+Durante o desenvolvimento deste projeto, foram praticados conceitos importantes de análise de dados, incluindo:
+
+- manipulação e tratamento de dados com Pandas;
+- identificação e tratamento de valores ausentes;
+- transformação e preparação de dados para análise;
+- criação e interpretação de visualizações;
+- construção de medidas e indicadores no Power BI;
+- criação de relacionamentos entre tabelas;
+- desenvolvimento de filtros e interações entre visuais;
+- organização de um dashboard com foco em clareza e facilidade de interpretação;
+- organização de um projeto de dados para publicação no GitHub.
